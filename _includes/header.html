@@ -1,33 +1,25 @@
-{% if page.header %}
-  <header role="banner" id="header">
-      <div class="site-header medium-12 columns">
-        <nav class="hide-for-small-only hide-for-ipad">
-          {% include socials.html %}
-        </nav>
-        <div class="header-logo wraptainer">
-          <a href="{{ site.github.url }}/"><img src="{{ site.github.url }}/{{ page.header }}" alt="{{ site.title }} banner image" title="{{ site.title }} banner image" class="center"></a>
+<!-- Header -->
+<header id="header"{% if page.layout == 'landing' %} class="alt"{% endif %}>
+  <h1><a href="{{ site.baseurl }}/index.html">{{ site.title }}</a></h1>
+  <nav id="nav">
+    <ul>
+      <li class="special">
+        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+        <div id="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            {% for my_page in site.pages %}
+            {% if my_page.title %}
+            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Log In</a></li>
+            <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}"
+                   class="icon fa-feed"> RSS Feed</a></li>
+          </ul>
         </div>
-        <nav class="hide-for-small-only hide-for-ipad">
-          {% include navigation.html %}
-        </nav>
-      </div>
-  </header>
-  
-  {% elsif site.header %}
-    <header role="banner" id="header" class="small-12 medium-3 columns">
-      <div class="site-header medium-12 columns">
-        <nav class="hide-for-small-only hide-for-ipad">
-          {% include socials.html %}
-        </nav>
-        <div class="header-logo wraptainer">
-          <a href="{{ site.github.url }}/"><img src="{{ site.github.url }}/{{ site.header }}" alt="{{ site.title }} banner image" title="{{ site.title }} banner image" class="center"></a>
-        </div>
-        <nav class="hide-for-small-only hide-for-ipad">
-          {% include navigation.html %}
-        </nav>
-      </div>
-    </header>
-  
-  {% else %}
-
-{% endif %}
+      </li>
+    </ul>
+  </nav>
+</header>

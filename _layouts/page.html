@@ -1,10 +1,17 @@
 ---
 layout: default
 ---
-<div class="row">
+<article id="main">
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+  <header>
+    <h2>{{ page.title }}</h2>
+    <p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
+  </header>
 
-</div> 
+  <section class="wrapper style5">
+    <div class="inner">
+      {{ content }}
+    </div>
+  </section>
+
+</article>
