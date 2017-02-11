@@ -15,6 +15,7 @@ $baseurl: '{{ site.baseurl }}/images';
 @import 'font-awesome.min.css';
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300');
+@import url('https://fonts.googleapis.com/css?family=Dosis:200');
 
 /*
 	Spectral by HTML5 UP
@@ -103,7 +104,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Roboto', sans-serif !important;
+		font-family: 'Dosis', sans-serif !important;
 		color: _palette(fg-bold);
 		font-weight: _font(weight-extrabold);
 		letter-spacing: _size(letter-spacing-alt);
