@@ -4,6 +4,11 @@
 
 $baseurl: '{{ site.baseurl }}/images';
 
+@font-face {
+    font-family: Bebas;
+    src: url(BebasNeue.otf);
+}
+
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
@@ -98,6 +103,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Bebas', sans-serif !important;
 		color: _palette(fg-bold);
 		font-weight: _font(weight-extrabold);
 		letter-spacing: _size(letter-spacing-alt);
