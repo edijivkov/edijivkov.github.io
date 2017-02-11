@@ -92,6 +92,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 	p {
+		font-family: 'Roboto', sans-serif !important; 
 		margin: 0 0 _size(element-margin) 0;
 	}
 
