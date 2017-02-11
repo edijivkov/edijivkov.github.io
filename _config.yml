@@ -1,14 +1,14 @@
 # Site settings
-title: Starving Artist Jekyll Theme
-email: ctarwater@chrisanthropic.com
+title: Edward Jivkov
+email: edijivkov@gmail.com
 author: Chrisanthropic
 
 keywords: jekyll, jekyll theme, portfolio theme, artist theme
-description: Witty description here.
+description: portfolio
 
 # Only use this if you are serving your site via Github Pages
 github:
-  url: "https://chrisanthropic.github.io/starving-artist-jekyll-theme"
+  url: "https://github.com/edijivkov/"
 
 header: images/logo.png
 
@@ -26,14 +26,14 @@ kramdown:
   input: GFM
 
 theme: starving-artist-jekyll-theme
-  
+
 # Plugins
 gems:
   - jekyll-feed
 
 feed:
   path: atom.xml
-  
+
 # Compress our Css
 #sass:
 #    style: :compressed
@@ -47,17 +47,5 @@ collections:
 
 #### SEO Stuff
 # Google Analytics
-google_universal_analytics: 
+google_universal_analytics:
 google_universal_analytics_cookiedomain: auto
-
-# Facebook Opengraph
-facebook_user:
-facebook_app_id:                                #enter your App ID
-facebook_locale: en_US
-facebook_page:                                  #the URL of your Facebook Page
-facebook_image: images/author.jpg                      #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
-
-# Twitter Cards
-twitter_user: 
-twitter_card: true
-twitter_image: images/author.jpg                       #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
